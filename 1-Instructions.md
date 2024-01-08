@@ -5,6 +5,7 @@
 Install kubectl, eksctl, AWS CLI (provided below)
 aws configure (have access key and secret access key)
 eksctl create cluster --name <cluster-name> --region us-east-1 --fargate
+eksctl create cluster <cluster-name> --zones us-east-1a,us-east-1b,us-east-1c --fargate
 ---eksctl delete cluster --name <cluster-name> --region us-east-1
 ```
 #### kubectl local setup
