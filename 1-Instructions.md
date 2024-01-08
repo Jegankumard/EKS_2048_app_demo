@@ -2,7 +2,7 @@
 
 #### setup commands
 ```
-Install kubectl, eksctl, AWS CLI (provided below)
+Install kubectl, eksctl, AWS CLI, Helm (provided below)
 aws configure (have access key and secret access key)
 eksctl create cluster --name <cluster-name> --region us-east-1 --fargate
 eksctl create cluster <cluster-name> --zones us-east-1a,us-east-1b,us-east-1c --fargate
@@ -179,4 +179,10 @@ sudo ./aws/install
 which aws
 ls -l /usr/local/bin/aws
 aws --version
+```
+## HELM (Linux):
+```
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
 ```
