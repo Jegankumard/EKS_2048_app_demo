@@ -82,9 +82,10 @@ kubectl get deployment -n kube-system aws-load-balancer-controller -w
 kubectl get po -n kube-system
 ```
 Check ALB is created in UI (DNS name accessible)
+```
 kubectl get ingress -n game-2048
-
-
+```
+=============================================================================================================
 ## KUBECTL (Linux):
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
