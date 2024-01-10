@@ -58,7 +58,7 @@ aws iam create-policy \
 
 #### Create IAM Role
 ```
-eksctl create <serviceaccountname> \
+eksctl create iamserviceaccount \
   --cluster=<your-cluster-name> \
   --namespace=kube-system \
   --name=aws-load-balancer-controller \
